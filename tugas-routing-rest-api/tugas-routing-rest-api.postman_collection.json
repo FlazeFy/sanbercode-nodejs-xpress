@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "8ad6e6a7-f6d9-42f9-8d06-462a45c6d9a5",
+		"name": "tugas-routing-rest-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18882129",
+		"_collection_link": "https://universal-firefly-984425.postman.co/workspace/sanbercode-nodejs~8b29b87e-4c02-4d05-b878-db9e19a60004/collection/18882129-8ad6e6a7-f6d9-42f9-8d06-462a45c6d9a5?action=share&source=collection_link&creator=18882129"
+	},
+	"item": [
+		{
+			"name": "1. All Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/category"
+			},
+			"response": []
+		},
+		{
+			"name": "2. Category By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/category/2"
+			},
+			"response": []
+		},
+		{
+			"name": "3. Category",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n    \"name\": \"{{$randomProductMaterial}}\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/category"
+			},
+			"response": []
+		},
+		{
+			"name": "4. Category By Id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n    \"name\": \"{{$randomProductMaterial}} New\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/category/2"
+			},
+			"response": []
+		},
+		{
+			"name": "5. Category By Id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \n    \"name\": \"Perabotan Rumah Tangga\" \n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3000/category/2"
+			},
+			"response": []
+		},
+		{
+			"name": "6. Product By Name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/product?name=Laptop",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Laptop"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "7. Product By Name & Category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/product/Elektronik?name=Laptop",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"product",
+						"Elektronik"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Laptop"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

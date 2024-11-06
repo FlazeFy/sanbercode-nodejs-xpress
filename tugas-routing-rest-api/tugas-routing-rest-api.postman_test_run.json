@@ -1,0 +1,176 @@
+{
+	"id": "5c45c56f-8d4e-4363-b184-6fc8eef25e87",
+	"name": "tugas-routing-rest-api",
+	"timestamp": "2024-11-06T13:51:13.776Z",
+	"collection_id": "18882129-8ad6e6a7-f6d9-42f9-8d06-462a45c6d9a5",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-11-06T13:51:13.501Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "53f29764-150a-4629-98e1-1cfb17433fa3",
+			"name": "1. All Category",
+			"url": "http://localhost:3000/category",
+			"time": 15,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				15
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "483e0986-7776-4199-9907-d6ecc22ff3b8",
+			"name": "2. Category By Id",
+			"url": "http://localhost:3000/category/2",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "1b191cd1-7897-4405-a110-d762659b276a",
+			"name": "3. Category",
+			"url": "http://localhost:3000/category",
+			"time": 19,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				19
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "74c44356-69ad-41c1-a459-d0d2e5c593a9",
+			"name": "4. Category By Id",
+			"url": "http://localhost:3000/category/2",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "aefab82b-7df0-4a49-932f-3f3d43094d1d",
+			"name": "5. Category By Id",
+			"url": "http://localhost:3000/category/2",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "3c44d7bb-c6a5-4a42-be00-7df0ba964a71",
+			"name": "6. Product By Name",
+			"url": "http://localhost:3000/product?name=Laptop",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				5
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "00953012-89c0-4ba0-a895-0f66ecd49c0e",
+			"name": "7. Product By Name & Category",
+			"url": "http://localhost:3000/product/Elektronik?name=Laptop",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				3
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 52,
+	"collection": {
+		"requests": [
+			{
+				"id": "53f29764-150a-4629-98e1-1cfb17433fa3",
+				"method": "GET"
+			},
+			{
+				"id": "483e0986-7776-4199-9907-d6ecc22ff3b8",
+				"method": "GET"
+			},
+			{
+				"id": "1b191cd1-7897-4405-a110-d762659b276a",
+				"method": "POST"
+			},
+			{
+				"id": "74c44356-69ad-41c1-a459-d0d2e5c593a9",
+				"method": "PUT"
+			},
+			{
+				"id": "aefab82b-7df0-4a49-932f-3f3d43094d1d",
+				"method": "DELETE"
+			},
+			{
+				"id": "3c44d7bb-c6a5-4a42-be00-7df0ba964a71",
+				"method": "GET"
+			},
+			{
+				"id": "00953012-89c0-4ba0-a895-0f66ecd49c0e",
+				"method": "GET"
+			}
+		]
+	}
+}
