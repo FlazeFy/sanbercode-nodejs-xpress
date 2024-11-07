@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "49901a5f-7e40-4106-bd80-119b5ea01022",
+		"name": "tugas-middleware-express",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18882129",
+		"_collection_link": "https://universal-firefly-984425.postman.co/workspace/sanbercode-nodejs~8b29b87e-4c02-4d05-b878-db9e19a60004/collection/18882129-49901a5f-7e40-4106-bd80-119b5ea01022?action=share&source=collection_link&creator=18882129"
+	},
+	"item": [
+		{
+			"name": "1. Upload Single File",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "postman-cloud:///1ef9cdcb-21da-4480-9d87-16b1723585a6"
+						}
+					]
+				},
+				"url": "http://localhost:3000/upload/single"
+			},
+			"response": []
+		},
+		{
+			"name": "2. Upload Multiple File",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": [
+								"postman-cloud:///1ef9cea5-a5bc-4a20-a257-b209ced17254",
+								"postman-cloud:///1ef9cdcb-21da-4480-9d87-16b1723585a6"
+							]
+						}
+					]
+				},
+				"url": "http://localhost:3000/upload/multiple"
+			},
+			"response": []
+		}
+	]
+}

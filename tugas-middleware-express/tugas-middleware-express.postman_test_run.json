@@ -1,0 +1,66 @@
+{
+	"id": "57051961-ca20-4408-8540-029d0162b4d5",
+	"name": "tugas-middleware-express",
+	"timestamp": "2024-11-07T09:29:08.929Z",
+	"collection_id": "18882129-49901a5f-7e40-4106-bd80-119b5ea01022",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-11-07T09:28:55.348Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "66e97e91-d3f0-4b56-9e56-3ee0bd7db43a",
+			"name": "1. Upload Single File",
+			"url": "http://localhost:3000/upload/single",
+			"time": 4357,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4357
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "fcf1b1e5-bf87-4fe8-ae90-5cc33ff83391",
+			"name": "2. Upload Multiple File",
+			"url": "http://localhost:3000/upload/multiple",
+			"time": 8973,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				8973
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 13330,
+	"collection": {
+		"requests": [
+			{
+				"id": "66e97e91-d3f0-4b56-9e56-3ee0bd7db43a",
+				"method": "GET"
+			},
+			{
+				"id": "fcf1b1e5-bf87-4fe8-ae90-5cc33ff83391",
+				"method": "GET"
+			}
+		]
+	}
+}
