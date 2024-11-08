@@ -1,0 +1,242 @@
+{
+	"id": "c8a029bf-4c31-4d0d-8fbb-9655d3406073",
+	"name": "tugas-mongodb",
+	"timestamp": "2024-11-08T15:05:11.402Z",
+	"collection_id": "18882129-ced2513a-30bb-4d48-a3c1-7d0b663c6d15",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-11-08T15:05:10.570Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "b55d3d7a-29af-43d7-bbd7-4340f6e5f621",
+			"name": "Category",
+			"url": "http://localhost:3000/api/categories",
+			"time": 163,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				163
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "0fb01f01-25f6-4f69-80f4-78be8a140873",
+			"name": "All Categories",
+			"url": "http://localhost:3000/api/categories",
+			"time": 27,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				27
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "983d528c-fb74-46b9-b24a-5a2fc010f15f",
+			"name": "All Categories By Id",
+			"url": "http://localhost:3000/api/categories/672e276fc26057c576eab6a9",
+			"time": 29,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				29
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8f386e15-6156-475f-bad9-ef5e30ccf358",
+			"name": "Category By Id",
+			"url": "http://localhost:3000/api/categories/672e276fc26057c576eab6a9",
+			"time": 57,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				57
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "08b30602-dded-4a85-be6e-2169974f7833",
+			"name": "Category By Id",
+			"url": "http://localhost:3000/api/categories/672e276fc26057c576eab6a9",
+			"time": 20,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				20
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "8fa0f397-028c-433c-91a0-55807bfaafbd",
+			"name": "Product",
+			"url": "http://localhost:3000/api/products",
+			"time": 27,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				27
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "f2d712d6-5ab6-4dba-ad74-a6b0ad42d9dc",
+			"name": "All Products",
+			"url": "http://localhost:3000/api/products",
+			"time": 25,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				25
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "be8d1c23-ae26-4b81-ac4a-46736d7125f5",
+			"name": "All Products By Id",
+			"url": "http://localhost:3000/api/products/672e2820c26057c576eab6ae",
+			"time": 49,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				49
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "be760c0c-fcbb-43a2-81e5-a22daadaceea",
+			"name": "Product By Id",
+			"url": "http://localhost:3000/api/products/672e2820c26057c576eab6ae",
+			"time": 55,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				55
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "9e04558f-59ce-483a-967d-c2a7cd883959",
+			"name": "Product By Id",
+			"url": "http://localhost:3000/api/products/672e2820c26057c576eab6ae",
+			"time": 80,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				80
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 532,
+	"collection": {
+		"requests": [
+			{
+				"id": "b55d3d7a-29af-43d7-bbd7-4340f6e5f621",
+				"method": "POST"
+			},
+			{
+				"id": "0fb01f01-25f6-4f69-80f4-78be8a140873",
+				"method": "GET"
+			},
+			{
+				"id": "983d528c-fb74-46b9-b24a-5a2fc010f15f",
+				"method": "GET"
+			},
+			{
+				"id": "8f386e15-6156-475f-bad9-ef5e30ccf358",
+				"method": "PUT"
+			},
+			{
+				"id": "08b30602-dded-4a85-be6e-2169974f7833",
+				"method": "DELETE"
+			},
+			{
+				"id": "8fa0f397-028c-433c-91a0-55807bfaafbd",
+				"method": "POST"
+			},
+			{
+				"id": "f2d712d6-5ab6-4dba-ad74-a6b0ad42d9dc",
+				"method": "GET"
+			},
+			{
+				"id": "be8d1c23-ae26-4b81-ac4a-46736d7125f5",
+				"method": "GET"
+			},
+			{
+				"id": "be760c0c-fcbb-43a2-81e5-a22daadaceea",
+				"method": "PUT"
+			},
+			{
+				"id": "9e04558f-59ce-483a-967d-c2a7cd883959",
+				"method": "DELETE"
+			}
+		]
+	}
+}
