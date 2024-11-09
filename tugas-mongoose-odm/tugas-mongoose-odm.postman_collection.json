@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "d502347e-798f-4bd3-b171-e61be007cf64",
+		"name": "tugas-mongoose-odm",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18882129",
+		"_collection_link": "https://universal-firefly-984425.postman.co/workspace/sanbercode-nodejs~8b29b87e-4c02-4d05-b878-db9e19a60004/collection/18882129-d502347e-798f-4bd3-b171-e61be007cf64?action=share&source=collection_link&creator=18882129"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "All Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/api/products"
+					},
+					"response": []
+				},
+				{
+					"name": "All Products By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/api/products/672e2820c26057c576eab6ae"
+					},
+					"response": []
+				},
+				{
+					"name": "Product By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Kemeja dengan Kategori\",\n    \"description\": \"Deskripsi kemeja dengan kategori\",\n    \"images\": [\"https://res.cloudinary.com/five-code/image/upload/v1718805645/fxuurm45mt5talry7a29.png\", \"sepatu2.jpg\", \"sepatu3.jpg\"],\n    \"price\": 15000,\n    \"qty\": 100,\n    \"category\": \"-- isi dengan _id dari salah satu category –\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/products/672ea88281755c5b4924a9f7"
+					},
+					"response": []
+				},
+				{
+					"name": "Product By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"{{$randomProduct}}\",\n    \"price\":{{$randomPrice}},\n    \"description\":\"{{$randomWords}}\",\n    \"qty\":{{$randomInt}}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/products/672e2820c26057c576eab6ae"
+					},
+					"response": []
+				},
+				{
+					"name": "Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Kemeja dengan Kategori\",\n    \"description\": \"Deskripsi kemeja dengan kategori\",\n    \"images\": [\"https://res.cloudinary.com/five-code/image/upload/v1718805645/fxuurm45mt5talry7a29.png\", \"sepatu2.jpg\", \"sepatu3.jpg\"],\n    \"price\": 15000,\n    \"qty\": 100,\n    \"category\": \"672ea82c81755c5b4924a9f4\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/products"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "Find All Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/api/categories"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\":\"{{$randomProductMaterial}}\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/categories"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "1. Upload Single File Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "postman-cloud:///1ef9cdcb-21da-4480-9d87-16b1723585a6"
+						}
+					]
+				},
+				"url": "http://localhost:3000/upload/single"
+			},
+			"response": []
+		},
+		{
+			"name": "2. Upload Multiple File Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "files",
+							"type": "file",
+							"src": [
+								"postman-cloud:///1ef9cea5-a5bc-4a20-a257-b209ced17254",
+								"postman-cloud:///1ef9cdcb-21da-4480-9d87-16b1723585a6"
+							]
+						}
+					]
+				},
+				"url": "http://localhost:3000/upload/multiple"
+			},
+			"response": []
+		}
+	]
+}

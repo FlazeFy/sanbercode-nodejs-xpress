@@ -1,0 +1,110 @@
+{
+	"id": "e08ecd3d-10e3-404a-9798-1f0f070b6abb",
+	"name": "tugas-mongoose-odm",
+	"timestamp": "2024-11-09T00:41:26.081Z",
+	"collection_id": "18882129-d502347e-798f-4bd3-b171-e61be007cf64",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-11-09T00:41:25.621Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "1a950aca-897d-40c4-9342-8e0d85e4422e",
+			"name": "Create Category",
+			"url": "http://localhost:3000/api/categories",
+			"time": 128,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				128
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "fd76f0f1-12aa-410b-b85d-26fa134a0d1e",
+			"name": "Find All Categories",
+			"url": "http://localhost:3000/api/categories",
+			"time": 42,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				42
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "51a6d136-7901-42f2-87e2-9e067daa500e",
+			"name": "Product",
+			"url": "http://localhost:3000/api/products",
+			"time": 41,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				41
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e9004906-038c-472a-a69c-dadc5218dd22",
+			"name": "All Products",
+			"url": "http://localhost:3000/api/products",
+			"time": 66,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				66
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 277,
+	"collection": {
+		"requests": [
+			{
+				"id": "1a950aca-897d-40c4-9342-8e0d85e4422e",
+				"method": "POST"
+			},
+			{
+				"id": "fd76f0f1-12aa-410b-b85d-26fa134a0d1e",
+				"method": "GET"
+			},
+			{
+				"id": "51a6d136-7901-42f2-87e2-9e067daa500e",
+				"method": "POST"
+			},
+			{
+				"id": "e9004906-038c-472a-a69c-dadc5218dd22",
+				"method": "GET"
+			}
+		]
+	}
+}
