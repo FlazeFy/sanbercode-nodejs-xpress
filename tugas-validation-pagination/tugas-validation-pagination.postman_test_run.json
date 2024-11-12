@@ -1,0 +1,154 @@
+{
+	"id": "29a1a57b-a34c-4b52-80bc-18268f2b88f2",
+	"name": "tugas-validation-pagination",
+	"timestamp": "2024-11-12T14:18:54.010Z",
+	"collection_id": "18882129-ec40674a-a426-494a-a897-d8e297915844",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-11-12T14:18:49.926Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "0734a48f-1f98-43a0-83c3-cb471f9c9e23",
+			"name": "Product With Slug",
+			"url": "http://localhost:3000/api/products",
+			"time": 55,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				55
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "49bb7a8e-90e0-45b9-afe4-29e75127ccba",
+			"name": "Product Without Slug",
+			"url": "http://localhost:3000/api/products",
+			"time": 75,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				75
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "e78fb715-f1e8-49bd-9a8f-1c3a873a54c2",
+			"name": "Product Without Price",
+			"url": "http://localhost:3000/api/products",
+			"time": 4,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				4
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "d9b4b1fe-72dc-4296-a159-b3fb4993e5a0",
+			"name": "All Products",
+			"url": "http://localhost:3000/api/products?page=1&limit=1",
+			"time": 454,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				454
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "3b447043-6ee7-4ec2-8dcc-41be7409aef1",
+			"name": "All Products (Page 2 Limit 1)",
+			"url": "http://localhost:3000/api/products?page=2&limit=1",
+			"time": 2815,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				2815
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6f4c71fe-8886-4fb9-a23d-6b53777f9e56",
+			"name": "All Products (Page 5 Limit 10)",
+			"url": "http://localhost:3000/api/products?page=5&limit=10",
+			"time": 351,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				351
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 3754,
+	"collection": {
+		"requests": [
+			{
+				"id": "0734a48f-1f98-43a0-83c3-cb471f9c9e23",
+				"method": "POST"
+			},
+			{
+				"id": "49bb7a8e-90e0-45b9-afe4-29e75127ccba",
+				"method": "POST"
+			},
+			{
+				"id": "e78fb715-f1e8-49bd-9a8f-1c3a873a54c2",
+				"method": "POST"
+			},
+			{
+				"id": "d9b4b1fe-72dc-4296-a159-b3fb4993e5a0",
+				"method": "GET"
+			},
+			{
+				"id": "3b447043-6ee7-4ec2-8dcc-41be7409aef1",
+				"method": "GET"
+			},
+			{
+				"id": "6f4c71fe-8886-4fb9-a23d-6b53777f9e56",
+				"method": "GET"
+			}
+		]
+	}
+}
