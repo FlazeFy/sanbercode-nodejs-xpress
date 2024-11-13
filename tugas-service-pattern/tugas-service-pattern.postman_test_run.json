@@ -1,0 +1,132 @@
+{
+	"id": "0d01ad5a-d3a4-4146-b4d5-bf6af0c92c9e",
+	"name": "tugas-service-pattern",
+	"timestamp": "2024-11-13T14:00:29.732Z",
+	"collection_id": "18882129-73579bf3-1c28-488b-a21e-4d73c71b8d64",
+	"folder_id": "18882129-9fb0d3bc-9a39-42bf-8149-acda7344540f",
+	"environment_id": "0",
+	"totalPass": 0,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-11-13T14:00:29.202Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "ca3517fd-8afc-4b59-ac17-0900c8dee845",
+			"name": "Category",
+			"url": "http://localhost:3000/api/categories",
+			"time": 45,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				45
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "c0b90dac-873a-4590-8377-79a4c4900472",
+			"name": "Category By Id",
+			"url": "http://localhost:3000/api/categories/6734b0bef1041fe9e6a30911",
+			"time": 59,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				59
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "228b1cdc-736f-4f6a-ae37-9e90993840bc",
+			"name": "Category By Id",
+			"url": "http://localhost:3000/api/categories/6734b0bef1041fe9e6a30911",
+			"time": 45,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				45
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "6c16b5e2-cdf8-47cc-814c-9a440e8ba4bb",
+			"name": "Category By Id",
+			"url": "http://localhost:3000/api/categories/6734b0bef1041fe9e6a30911",
+			"time": 45,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				45
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "4ba554cf-6683-4383-aa7e-f266cde3c050",
+			"name": "All Categories",
+			"url": "http://localhost:3000/api/categories",
+			"time": 89,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				89
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 283,
+	"collection": {
+		"requests": [
+			{
+				"id": "ca3517fd-8afc-4b59-ac17-0900c8dee845",
+				"method": "POST"
+			},
+			{
+				"id": "c0b90dac-873a-4590-8377-79a4c4900472",
+				"method": "GET"
+			},
+			{
+				"id": "228b1cdc-736f-4f6a-ae37-9e90993840bc",
+				"method": "PUT"
+			},
+			{
+				"id": "6c16b5e2-cdf8-47cc-814c-9a440e8ba4bb",
+				"method": "DELETE"
+			},
+			{
+				"id": "4ba554cf-6683-4383-aa7e-f266cde3c050",
+				"method": "GET"
+			}
+		]
+	}
+}

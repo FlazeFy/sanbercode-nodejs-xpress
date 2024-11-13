@@ -1,0 +1,171 @@
+{
+	"info": {
+		"_postman_id": "73579bf3-1c28-488b-a21e-4d73c71b8d64",
+		"name": "tugas-service-pattern",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "18882129",
+		"_collection_link": "https://universal-firefly-984425.postman.co/workspace/sanbercode-nodejs~8b29b87e-4c02-4d05-b878-db9e19a60004/collection/18882129-73579bf3-1c28-488b-a21e-4d73c71b8d64?action=share&source=collection_link&creator=18882129"
+	},
+	"item": [
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "All Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/api/products"
+					},
+					"response": []
+				},
+				{
+					"name": "Product By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/products/67349dfeb5249a099912d2a3"
+					},
+					"response": []
+				},
+				{
+					"name": "Product By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:3000/api/products/67349dfeb5249a099912d2a3"
+					},
+					"response": []
+				},
+				{
+					"name": "Product By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Kemeja dengan Kategori\",\n    \"description\": \"Deskripsi kemeja dengan kategori\",\n    \"images\": [\"https://res.cloudinary.com/five-code/image/upload/v1718805645/fxuurm45mt5talry7a29.png\", \"sepatu2.jpg\", \"sepatu3.jpg\"],\n    \"price\": 15000,\n    \"qty\": 100,\n    \"category\": \"672ea82c81755c5b4924a9f4\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/products/67349dfeb5249a099912d2a3"
+					},
+					"response": []
+				},
+				{
+					"name": "Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Kemeja dengan Kategori\",\n    \"description\": \"Deskripsi kemeja dengan kategori\",\n    \"images\": [\"https://res.cloudinary.com/five-code/image/upload/v1718805645/fxuurm45mt5talry7a29.png\", \"sepatu2.jpg\", \"sepatu3.jpg\"],\n    \"price\": 15000,\n    \"qty\": 100,\n    \"category\": \"672ea82c81755c5b4924a9f4\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/products"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "All Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:3000/api/categories"
+					},
+					"response": []
+				},
+				{
+					"name": "Category By Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/categories/6734b0bef1041fe9e6a30911"
+					},
+					"response": []
+				},
+				{
+					"name": "Category By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://localhost:3000/api/categories/6734b0bef1041fe9e6a30911"
+					},
+					"response": []
+				},
+				{
+					"name": "Category By Id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"{{$randomProductMaterial}}\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/categories/6734b0bef1041fe9e6a30911"
+					},
+					"response": []
+				},
+				{
+					"name": "Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"{{$randomProductMaterial}}\"\n}\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:3000/api/categories"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
