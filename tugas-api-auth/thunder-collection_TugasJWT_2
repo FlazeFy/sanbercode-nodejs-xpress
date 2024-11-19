@@ -1,0 +1,61 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "TugasJWT",
+    "collectionId": "5405f8e3-7e3a-4973-815d-13c5999a9723",
+    "dateExported": "2024-11-19T16:02:39.093Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "7e604c4a-f725-496f-a0c9-6f724dd22119",
+            "colId": "5405f8e3-7e3a-4973-815d-13c5999a9723",
+            "containerId": "",
+            "name": "Register",
+            "url": "http://localhost:3000/api/auth/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-11-16T04:20:34.376Z",
+            "modified": "2024-11-19T15:57:49.099Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"email\": \"admin@toko23.com\",\r\n  \"fullName\": \"Admin\",\r\n  \"password\": \"12341234\",\r\n  \"username\": \"admintoko23\",\r\n  \"roles\":[\"admin\"]\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "e1ecc9c1-b9fd-4aa2-b8eb-a5a3a1df1532",
+            "colId": "5405f8e3-7e3a-4973-815d-13c5999a9723",
+            "containerId": "",
+            "name": "Login",
+            "url": "http://localhost:3000/api/auth/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-11-16T04:23:31.001Z",
+            "modified": "2024-11-19T15:59:50.564Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n  \"email\": \"admin@toko23.com\",\r\n  \"password\": \"12341234\"\r\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "738dd31e-fa64-4825-8917-b99e8f767ba2",
+            "colId": "5405f8e3-7e3a-4973-815d-13c5999a9723",
+            "containerId": "",
+            "name": "My Profile",
+            "url": "http://localhost:3000/api/auth/me",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-11-16T04:28:47.283Z",
+            "modified": "2024-11-19T15:59:59.638Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY3M2NiNWIyZTg2NWY2NzJlOGIyYTVkZiIsInJvbGVzIjpbImFkbWluIl0sImlhdCI6MTczMjAzMTk5MSwiZXhwIjoxNzMyMDM1NTkxfQ.cqJyQ88jB08dwYlBlkQt5-uh7Ip0jv0W7-UjTZ0zSAM"
+            }
+        }
+    ],
+    "ref": "rCBsVe8410lPcfbAl9DlPpq7VCzRgzvxubpi_SdKv48Yd4LAWUZS6ZQVTo7fLmX7KNdG7347EmYyuhIiEjfKqQ"
+}
